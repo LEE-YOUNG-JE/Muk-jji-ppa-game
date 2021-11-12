@@ -15,3 +15,9 @@ Series에서 3번연속인 것을 체크안하고 2번만 한 이유는 3번 확
 따라서 Series에서 2번만 체크하고 main RSP에서 직접 3번 연속인지 바로 확인하여 출력하도록 하였다. 가위바위보를 하고 있는 상태에서 연속인지 판단하는 것은 유효하지 않으므로 STAT가 공격하고 있는 상태가 아니라면 AS,BS가 0을 assign하게 설계하였고 공격권이 있는 상태라면 Series와 main RSP를 AS,BS로 assign하는 방식으로 설계해서 가위바위보할 때는 연속을 고려하지 않도록 하였다.
 
 그리고 모든 경우에 RST이 1일 때 초기화 되게 설계하였다. 마지막으로 score가 9를 초과한 경우에 0으로 가게 하였다. 
+
+
+
+# 결과화면
+![image](https://user-images.githubusercontent.com/76897007/141432893-1e3d355a-34e0-456d-9cc4-b45c58ed7ca9.png)
+![image](https://user-images.githubusercontent.com/76897007/141432919-18106c8f-0687-480e-9700-dab3dbe1bc3d.png)
